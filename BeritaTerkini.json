@@ -1,0 +1,32 @@
+[
+    {
+        "id": 1,
+        "Kategori": "History Magazine",
+        "Judul": "This ancient Greek warship ruled the Mediterranean"
+    },
+    {
+        "id": 2,
+        "Kategori": "Travel",
+        "Judul": "Explore a billion-year-old volcanic mystery on Lake Superior"
+    },
+    {
+        "id": 3,
+        "Kategori": "Paid Content",
+        "Judul": "A journey of the senses through Abu Dhabi"
+    },
+    {
+        "id": 4,
+        "Kategori": "Magazine",
+        "Judul": "Are museums clinging to stolen treasure?"
+    },
+    {
+        "id": 5,
+        "Kategori": "Magazine",
+        "Judul": "How the world looked in 1914, at the peak of colonialism"
+    },
+    {
+        "id": 6,
+        "Kategori": "Animals",
+        "Judul": "How a zoo break-in changed the life of an owl called Flaco"
+    }
+]
