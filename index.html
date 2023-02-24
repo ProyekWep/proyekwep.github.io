@@ -209,14 +209,29 @@ http://www.templatemo.com/tm-468-onetel
 			</div>
 		</div>
 	</div>
-
+	<div id="#BeritaTerkini_json"></div>
 
 	<!-- javascript js -->
 	<script src="js/jquery.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/nivo-lightbox.min.js"></script>
 	<script src="js/custom.js"></script>
+	<a href="Hasil.html" class="HasilJson">Today's Topics</a>
 
 </body>
+<script type="text/javascript">
+	$(function () {
+		//mengambil data dari file json
+		$.getJSON('BeritaTerkini.json', function (soup) {
+			var str = "<table border=1>";
+			str += "<tr><td>No</td><td class='tables'>Judul</td><td class='tables'>Kategori</td></tr>";
+			$.each(soup, function (n, result) {
+				str += `<tr><td>${result.id}</td><td class='tables'>${result.Judul}</td><td class='tables'>${result.Kategori}</td></tr>`;
+			});
+			str += "</table>";
+			$('#BeritaTerkini_json').html(str);
+		});
+	});
+</script>
 
 </html>
