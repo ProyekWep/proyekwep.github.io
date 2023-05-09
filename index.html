@@ -44,6 +44,8 @@ http://www.templatemo.com/tm-468-onetel
 					<li><a href="about.html">ABOUT US</a></li>
 					<li><a href="portfolio.html">PORTFOLIO</a></li>
 					<li><a href="contact.html">CONTACT</a></li>
+					<li><a href="Hasil.html" class="HasilJson">Today's Topics</a></li>
+					<li><a href="visualization.html">Visualization</a></li>
 				</ul>
 			</div>
 		</div>
@@ -111,16 +113,6 @@ http://www.templatemo.com/tm-468-onetel
 		</div>
 	</div>
 
-	<div id="Data">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-6 col-sm-12">
-					<iframe title="visualisasidataA6fix" width="1140" height="541.25" src="https://app.powerbi.com/reportEmbed?reportId=df5a386e-0ec1-40e5-bf3b-25ce982925d3&autoAuth=true&ctid=98374cd7-c8b8-413c-8476-b8722ae7e8e8" frameborder="0" allowFullScreen="true"></iframe>
-				</div>
-			</div>
-		</div>
-	</div>
-	
 	<!-- portfolio section -->
 	<!-- <div id="portfolio">
 		<div class="container">
@@ -170,7 +162,7 @@ http://www.templatemo.com/tm-468-onetel
 		</div>
 	</div> -->
 
-	
+
 	<!-- footer section -->
 	<footer>
 		<div class="container">
@@ -187,8 +179,7 @@ http://www.templatemo.com/tm-468-onetel
 				<div class="col-md-3 col-sm-4">
 					<h3>Our Instagram</h3>
 					<p><a rel="nofollow" href="https://www.instagram.com/adindafzp" target="_parent">@adindafzp</a></p>
-					<p><a rel="nofollow" href="https://www.instagram.com/dean.baihaqi"
-							target="_parent">@dean.baihaqi</a></p>
+					<p><a rel="nofollow" href="https://www.instagram.com/dean.baihaqi" target="_parent">@dean.baihaqi</a></p>
 					<p><a rel="nofollow" href="https://www.instagram.com/rendizlfz" target="_parent">@rendizlfz</a></p>
 					<p><a rel="nofollow" href="https://www.instagram.com/nezrayy" target="_parent">@nezrayy</a></p>
 					<p><a rel="nofollow" href="https://www.instagram.com/retrodf_" target="parent">@retrodf</a></p>
@@ -199,8 +190,7 @@ http://www.templatemo.com/tm-468-onetel
 					<p></p>
 					<div class="input-group">
 						<form action="#" method="post">
-							<input name="email" type="email" placeholder="Enter your email" class="form-control"
-								autorequired>
+							<input name="email" type="email" placeholder="Enter your email" class="form-control" autorequired>
 							<button type="submit" name="submit" class="btn email">Submit</button>
 						</form>
 					</div>
@@ -227,22 +217,7 @@ http://www.templatemo.com/tm-468-onetel
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/nivo-lightbox.min.js"></script>
 	<script src="js/custom.js"></script>
-	<a href="Hasil.html" class="HasilJson">Today's Topics</a>
 
 </body>
-<script type="text/javascript">
-	$(function () {
-		//mengambil data dari file json
-		$.getJSON('BeritaTerkini.json', function (soup) {
-			var str = "<table border=1>";
-			str += "<tr><td>No</td><td class='tables'>Judul</td><td class='tables'>Kategori</td></tr>";
-			$.each(soup, function (n, result) {
-				str += `<tr><td>${result.id}</td><td class='tables'>${result.Judul}</td><td class='tables'>${result.Kategori}</td></tr>`;
-			});
-			str += "</table>";
-			$('#BeritaTerkini_json').html(str);
-		});
-	});
-</script>
 
 </html>
